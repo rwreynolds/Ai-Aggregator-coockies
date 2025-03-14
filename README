@@ -68,7 +68,7 @@ yarn dev
 ## Project Structure
 
 ```
-ai-aggregator/
+backend/
 ├── app/                    # Next.js app router
 │   ├── api/                # API routes
 │   ├── chat/               # Chat page
