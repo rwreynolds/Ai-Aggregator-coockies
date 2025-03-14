@@ -1,0 +1,101 @@
+# AI Aggregator
+
+A Next.js + Flask application that aggregates multiple AI services and models in a single interface.
+
+## Features
+
+- User authentication with NextAuth.js
+- Chat interface with support for multiple AI services
+- Configurable settings for different models and parameters
+- Real-time conversation with AI models
+- Responsive design for both desktop and mobile
+
+## Tech Stack
+
+### Frontend
+- Next.js 13+ (App Router)
+- TypeScript
+- Tailwind CSS
+- NextAuth.js for authentication
+- React Icons
+- Axios for API requests
+- DaisyUI and HeadlessUI components
+
+### Backend (To be implemented)
+- Flask (Python)
+- PostgreSQL for user accounts and settings
+- MongoDB for conversation history
+- Docker for containerization
+
+## Getting Started
+
+### Prerequisites
+- Node.js 16+
+- npm or yarn
+- Git
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/ai-aggregator.git
+cd ai-aggregator
+```
+
+2. Install the dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Copy the `.env.example` file to `.env.local` and fill in your environment variables:
+```bash
+cp .env.example .env.local
+```
+
+4. Set up the PostgreSQL database (this will be handled by the backend implementation).
+
+5. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
+
+## Project Structure
+
+```
+ai-aggregator/
+├── app/                    # Next.js app router
+│   ├── api/                # API routes
+│   ├── chat/               # Chat page
+│   ├── login/              # Login page
+│   ├── signup/             # Signup page
+│   ├── layout.tsx          # Root layout
+│   └── page.tsx            # Landing page
+├── components/             # React components
+├── lib/                    # Utility functions and types
+├── public/                 # Static assets
+├── styles/                 # Global styles
+├── prisma/                 # Prisma schema and migrations
+└── ...                     # Configuration files
+```
+
+## Backend Implementation (Coming Soon)
+
+The backend will be implemented with Flask and will handle:
+- API requests to various AI services
+- User authentication
+- Database connections (PostgreSQL and MongoDB)
+- Session management
+
+## Deployment
+
+The application is designed to be deployed on a Digital Ocean droplet alongside an existing app, using Nginx for routing.
+
+## License
+
+This project is licensed under the MIT License.
